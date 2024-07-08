@@ -1,9 +1,5 @@
 # Gemini Quizify
 
-<!-- <video width="500" height="500" controls>
-  <source src="./readme/demo.mov" type>
-</video> -->
-
 <video width="1000" height="400" controls>
   <source src="./readme/demo.mov" type="video/mp4">
   Your browser does not support the video tag.
