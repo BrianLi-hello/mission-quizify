@@ -27,11 +27,6 @@ if __name__ == "__main__":
     
         screen = st.empty()
         with screen.container():
-            # st.header("Quiz Builder")
-            # st.markdown("<div style='display:flex; justify-content: left;'>", unsafe_allow_html=True)
-            # st.markdown("[![Repo](https://badgen.net/badge/icon/GitHub?icon=github&label)](https://github.com/BrianLi-hello/mission-quizify)", unsafe_allow_html=True)
-            # st.markdown("[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin&style=flat-square)](https://www.linkedin.com/in/brian-li-ucd/)", unsafe_allow_html=True)
-            # st.markdown("</div>", unsafe_allow_html=True)
             st.header("Quiz Builder")
             st.markdown("""
                 <div style='display: flex; justify-content: left; padding: 10px'>
