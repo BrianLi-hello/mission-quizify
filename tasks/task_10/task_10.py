@@ -9,8 +9,8 @@ from tasks.task_5.task_5 import ChromaCollectionCreator
 from tasks.task_8.task_8 import QuizGenerator
 from tasks.task_9.task_9 import QuizManager
 
+st.set_page_config(page_title="Gemini Quizzify", page_icon="📝")
 if __name__ == "__main__":
-    
     embed_config = {
         "model_name": "textembedding-gecko@003",
         "project": "sample-mission-428503",
@@ -28,6 +28,7 @@ if __name__ == "__main__":
         screen = st.empty()
         with screen.container():
             st.header("Quiz Builder")
+            st.markdown("[![Repo](https://badgen.net/badge/icon/GitHub?icon=github&label)](https://github.com/BrianLi-hello/mission-quizify)", unsafe_allow_html=True)
             
             # Create a new st.form flow control for Data Ingestion
             with st.form("Load Data to Chroma"):
@@ -67,9 +68,10 @@ if __name__ == "__main__":
                     # Step 6: Set the question_index to 0 in st.session_state
                     st.session_state["question_index"] = 0
                     ##### YOUR CODE HERE #####
+                    
+                    st.rerun()
 
     elif st.session_state["display_quiz"]:
-        
         st.empty()
         with st.container():
             st.header("Generated Quiz Question: ")
