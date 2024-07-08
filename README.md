@@ -83,5 +83,7 @@ The quiz manager handles the backend operations for managing questions. It store
 ## Acknowledgements
 Thank you to [Radical AI](https://lab.radicalai.app/) for providing this insighting opportunity on LLMs, vector search, and Streamlit integration
 
-## Certificate
+## Loom Video
+
+Here is the presentation link for the Loom video: https://www.loom.com/share/452d8ca5d881476caa129e7ed670aa34
 
