@@ -128,6 +128,20 @@ class QuizGenerator:
             # question_str = # Use class method to generate question
             question_str = self.generate_question_with_vectorstore()
             
+            # If question_str starts with "```json", remove the first and last lines
+            if question_str.startswith("```json"):
+                # Split the string into lines
+                lines = question_str.split('\n')
+
+                # Remove the first and last lines
+                if len(lines) > 2:  # Ensure there are at least 3 lines to remove the first and last
+                    lines = lines[1:-1]
+                else:
+                    lines = []  # If there are fewer than 3 lines, result should be empty
+
+                # Join the remaining lines back together
+                question_str = '\n'.join(lines)
+            
             ##### YOUR CODE HERE #####
             try:
                 # Convert the JSON String to a dictionary
